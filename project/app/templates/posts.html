@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wh{width: 250px; height: 150px;}
+    </style>
+</head>
+<body>
+    {% for i in form %}
+<div class="dis">
+    <p>Пост №{{ i.id }}</p>
+    <p>Название: {{ i.name }}</p>
+<p>Новости: {{ i.text }}</p>
+<img class="wh" src="{{ i.image }}" >
+    <a href="{% url 'post' id=i.id %}">Подробнее</a>
+    </div>
+<hr>
+{% endfor %}
+</body>
+</html>

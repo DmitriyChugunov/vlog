@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wh{width: 250px; height: 150px;}
+    </style>
+</head>
+<body>
+<div class="dis">
+    <p>Пост №{{ post.id }}</p>
+    <p>Название: {{ post.name }}</p>
+<p>Новости: {{ post.text }}</p>
+<img class="wh" src="{{ post.image }}" >
+<p>Комментарии: {{ post.comment }}</p>
+    <p>Лайки: {{ post.like }}</p>
+    </div>
+<hr>
+</body>
+</html>
